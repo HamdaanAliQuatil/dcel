@@ -1,15 +1,63 @@
+# ==========================================================
+# 🧹 Professional .gitignore for Python + Nx + Node Projects
+# ==========================================================
 
-.nx/installation
-.nx/cache
-.nx/workspace-data
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+*.log
+*.sqlite3
+.env
+.venv/
+venv/
+env/
+*.bak
 
-env
-.vscode
-.nx
-node_modules
+# --- Node / Nx ---
+node_modules/
+.nx/
+.nx/cache/
+.nx/installation/
+.nx/workspace-data/
+.vscode/
+*.tsbuildinfo
 
-dist
-
+# --- Environment & Config ---
+.env
 .pypirc
+.DS_Store
+Thumbs.db
+*.swp
 
-__pycache__
+# --- IDE / Editor ---
+.idea/
+*.iml
+*.code-workspace
+
+# --- Coverage / Testing ---
+.coverage
+htmlcov/
+.tox/
+pytest_cache/
+.mypy_cache/
+.pytest_cache/
+.cache/
+
+# --- Distribution Artifacts ---
+dist/
+build/
+site/
+
+# --- Misc ---
+# Ignore temporary files, logs, or backup files
+*.tmp
+*.log
+*.bak
