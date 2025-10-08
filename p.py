@@ -1,0 +1,1 @@
+print("Welcome to polaris school of technology")
